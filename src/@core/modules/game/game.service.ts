@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
-import { Model, Types } from 'mongoose';
+import { ClientSession, Model, Types } from 'mongoose';
 
 import { BaseService } from '../../../@core/base/base.service';
 import { Game, GameDocument } from './game.schema';
@@ -11,9 +11,12 @@ export class GameService extends BaseService<GameDocument> {
     super(gameModel);
   }
 
-  async getById(id: Types.ObjectId): Promise<GameDocument> {
+  async getById(
+    id: Types.ObjectId,
+    session?: ClientSession,
+  ): Promise<GameDocument> {
     return this.gameModel
-      .findById(id)
+      .findById(id, null, { session })
       .populate(['players', 'rounds.results.player'])
       .exec();
   }

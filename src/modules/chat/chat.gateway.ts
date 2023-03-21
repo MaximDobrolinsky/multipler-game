@@ -8,7 +8,7 @@ import { Server, Socket } from 'socket.io';
 
 import { CreateMessageDto, MessageService } from '../../@core/modules/message';
 
-@WebSocketGateway(parseInt(process.env.PORT_SOCKET) | 3030, {
+@WebSocketGateway(parseInt(process.env.PORT_SOCKET), {
   namespace: 'chat',
   cors: {
     origin: '*',

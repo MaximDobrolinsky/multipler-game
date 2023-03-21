@@ -102,7 +102,7 @@ export class AppService {
 
     await this.updateUsersScore(roundResults, transactionSession);
 
-    return this.gameService.getById(gameId);
+    return this.gameService.getById(gameId, transactionSession);
   }
 
   async getAllGameMessages(gameId: Types.ObjectId): Promise<MessageDocument[]> {

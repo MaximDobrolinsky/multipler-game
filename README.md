@@ -1,5 +1,9 @@
 # multipler-game
 
+## Documentation
+`https://multipler-game-p6w6oyir7q-ue.a.run.app/doc`
+
+
 ## Run server locally
 1. Run `npm i`
 2. Create .env file and put env variables inside
@@ -8,21 +12,15 @@
 
 ## Environment variables
 ```
-DB_URL=mongodb://root:root@localhost:27017/multipler-game
-PORT=3000
-PORT_SOCKET=3030
+DB_URL=
+PORT=
+PORT_SOCKET=
 ```
 
 ## Requirements
 - NodeJS 16+
 - Docker
 
-## Run MongoDB container
-
-`cd containers/mongodb && docker-compose up -d`
-
-## Doc
-Local documentation url `http://localhost:3000/doc`
 
 ## API
 POST `/api/login` - Login as user and assigne users to game.
