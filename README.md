@@ -1,7 +1,7 @@
 # multipler-game
 
 ## Documentation
-`https://multipler-game-p6w6oyir7q-ue.a.run.app/doc`
+`https://multipler-game-p6w6oyir7q-uc.a.run.app/doc`
 
 
 ## Run server locally
