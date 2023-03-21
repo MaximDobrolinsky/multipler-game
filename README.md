@@ -19,13 +19,17 @@ PORT_SOCKET=
 
 ## Requirements
 - NodeJS 16+
+- MongoDB
 - Docker
 
 
 ## API
 POST `/api/login` - Login as user and assigne users to game.
+
 POST `/api/game/:id/round/start` - Process game round base on provided options.
+
 GET `/api/game/:id/messages` - Get all game messages.
+
 
 WS `/chat` - websocket for chat.
   - sendMessage - event name for send messages.
