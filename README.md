@@ -26,7 +26,7 @@ PORT_SOCKET=
 ## API
 POST `/api/login` - Login as user and assigne users to game.
 
-POST `/api/game/:id/round/start` - Process game round base on provided options.
+POST `/api/game/:id/round/start` - Process game round based on provided options.
 
 GET `/api/game/:id/messages` - Get all game messages.
 
